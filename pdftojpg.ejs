@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF to JPG</title>
+    <link rel="stylesheet" href="/stylesheets/style1.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <%- include('partials/nav') %>
+    <main>
+        <h2>PDF to JPG</h2>
+        <form action="/pdftojpg" method="POST" enctype="multipart/form-data">
+            <input type="file" name="pdfFile" required>
+            <button type="submit">Convert to JPG</button>
+        </form>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>
